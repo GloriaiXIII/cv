@@ -1,0 +1,186 @@
+<!DOCTYPE html> <!-- esto define el tipo de documento, es útil para el navegador
+                En visual studio code se debe escribir manualmente -->
+<html>
+
+    <head> <!-- información que se debe escribir no visible: metadata, scripts -->
+        <title> Glòria Ibars </title> <!-- define el título para el documento visible en el navegador -->
+        <meta charset="UTF-8"> <!-- codificación de los carácteres: permite la correcta visualización de carácteres -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"> <!-- vínculo con la hoja de estilos-->
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Libre+Baskerville&family=Lora&family=Merriweather&family=Montserrat&family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b01e98a0ff.js" crossorigin="anonymous"></script>
+    </head>
+
+
+
+    <body> <!-- información visible: el cuerpo del documento -->
+       
+        <!-- js -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <header> 
+            <nav>
+                <ul class="navbar">
+                    <li> <a href="index.html"> Home </a> </li>
+                    <li> <a href="pdf/gloriaibarscv.pdf" download target="_blank" rel="noopener noreferrer"> Download CV </a></li>
+                    <li> <a href="contact.html"> Contact </a> </li>
+                </ul>
+            </nav>
+        
+        </header>
+
+        <div id="page"> <!-- div define una agrupación genérica del documento, en este caso con la id #page englobamos la parte de texto -->
+
+        <main> <!-- part central del document-->
+        
+            <section id="presentation"> 
+
+                <img class="responsive" src="../gibars-ex1/img/gloriaibarsprofile.jpg"> <!--ESTO SERÁ PARA RESPONSIVE: elemento todavía por trabajar en él-->
+                   
+                <h1> Hello! </h1> <!-- título principal de la página-->
+                <p class="presentation"> <!-- esto es un párrafo--> I'm Glòria Ibars, a designer with a background in art history studies living in Barcelona.
+                    I've worked for museums and collaborated on cultural initiatives. 
+                </p>
+
+            </section>  
+
+
+            <section id="education" class="secciones">
+                
+                <h2> Education </h2>
+
+                <div> <!-- define una sección de navegación-->
+                    <ul> <!-- define una lista no ordenada -->
+                        <li> <!-- ítem de lista --> <a href="https://www.baued.es/estudios/grado-en-diseno/grado-en-diseno" target="_blank" rel="noopener noreferrer"> 
+                            <!-- a define un hipervínculo y href nos indica a dónde nos lleva. Por defecto son azul subrayado si no se modifica en css
+                            target _blank abre el link en una nueva pestaña y rel evita posibles ataques maliciosos del link -->
+                            <span class="education"> Grau en Disseny </span> 
+                                <span class="description"> Bau, Centre Universitari (UVIC) </span> 
+                                <span class="description2"> Actualment cursant </span> 
+                                    </a> </li>
+                        <li> <a href="http://www.ub.edu/art/grau-historia-de-lart/" target="_blank" rel="noopener noreferrer"> 
+                            <span class="education"> Història de l'Art </span> 
+                                <span class="description"> Universitat de Barcelona </span> 
+                                <span class="description2"> Setembre, 2013 - Juny, 2015 </span> 
+                                    </a> </li> 
+                    </ul>
+                </div>
+            </section>
+
+
+            <section id="work" class="secciones"> 
+                
+                <h2> Work experience </h2>
+
+                <div> 
+                    <ol>  <!-- define una lista ordenada -->
+                        <li>  
+                            <span class="work"> Museu de Cultures del Món </span> 
+                               <br> <span class="description"> Informadora cultural, gestió de reserves i atenció al públic </span> 
+                               <br> <span class="description2"> Abril, 2016 - Actualitat </span> 
+                                   </li>
+                        <li>  
+                            <span class="work"> Worth - Vestuari escènic </span> 
+                                <br> <span class="description"> Disseny i confecció de quatre camises per una banda de Metal </span> 
+                                <br> <span class="description2"> Febrer, 2019 - Març, 2019 </span> 
+                                    </li> 
+                        <li> 
+                            <span class="work"> Cartell i tríptic educatiu </span> 
+                                <br> <span class="description"> dels espais nadó i familiar de l'ajuntament de Barberà del Vallès. </span> 
+                                <br> <span class="description2"> Agost 2018 i Agost 2019 </span> 
+                                    </li> 
+                        <li>  
+                            <span class="work"> Setmanari Caldes de Montbui </span> 
+                                <br> <span class="description2"> Gener, 2015 - Juny, 2015 </span> 
+                                    </li> 
+                        <li>  
+                            <span class="work"> 7deRàdio (91.7FM), Barcelona </span> 
+                                <br> <span class="description"> Programa cultural Generació 7.0 </span> 
+                                <br> <span class="description2"> Març, 2014 - Juny, 2014 </span> 
+                                    </li> 
+                        <li>  
+                            <span class="work"> NeoKunst, publicació cultural </span> 
+                                <br> <span class="description"> Redactora d'articles d'història. </span> 
+                                <br> <span class="description2"> Abril, 2013 - Octubre, 2013 </span> 
+                                    </li> 
+                    </ol>
+                </div>
+
+
+
+            </section>
+
+
+            <section id="personal" class="secciones"> 
+               
+                <h2> Personal projects </h2>
+                
+                <div> 
+                    <ul> 
+                        <li> <a href="sempiterno.html"> 
+                            <span class="project"> Sempiterno </span> 
+                                <span class="description"> Showroom colección Privée  </span> 
+                                    </a> </li>
+                        <li> <a href="versalles.html"> 
+                            <span class="project"> Versalles </span> 
+                                <span class="description"> Brand fake rip-off project </span> 
+                                    </a> </li> 
+                        <li> <a href="pdf/gloriaibarscrisis.pdf" download target="_blank" rel="noopener noreferrer"> 
+                            <span class="project"> Crisis </span> 
+                                <span class="description"> Soluciones temporales - Zero Waste </span> 
+                                    </a> </li>
+        
+                    </ul>
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+        <footer> 
+            <div class="footer">
+                <a href="https://www.instagram.com/gloriaibarsdesign/" target="_blank" rel="noopener noreferrer">
+                    <span class="footer"> 
+                <i class="fab fa-instagram fa-lg"></i> </span> </a> 
+                <a href="https://www.linkedin.com/in/gloriaibars" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in fa-lg"></i> </a>
+            </div>
+
+        </footer>
+    
+        </div> <!-- fin div del page-->
+
+
+    <!-- SCRIPT JS -->
+
+        <script> //Colocar los scripts al final del body agiliza la velocidad de visualización
+            //Botón
+            var mybutton = document.getElementById("myBtn");
+            
+            // Aparece botón cuando scroll 
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // Desplazar a la parte superior en hacer click
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
+    </body>
+
+
+
+</html>
+
+
